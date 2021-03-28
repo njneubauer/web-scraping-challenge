@@ -1,10 +1,15 @@
 
 #h1{
-    font-weight: bolder;
-    font-size: xx-large;
+    font-weight: bold;
+    font-size: 40pt;
 }
 #h2 {
     font-weight: bold;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #table {
@@ -39,4 +44,9 @@ td:first-child{
     #h4-response {
         font-size: 14pt;
     }
+}
+
+.img-fluid {
+    max-width: 100% !important;
+    height: auto;
 }
