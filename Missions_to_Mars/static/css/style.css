@@ -1,3 +1,42 @@
+
+#h1{
+    font-weight: bolder;
+    font-size: xx-large;
+}
 #h2 {
     font-weight: bold;
+}
+
+#table {
+    margin-top: 0px;
+    padding-top: 0px;
+    border-spacing: 50px;
+    border: 2px solid black;
+    width:max-content;
+}
+
+th {
+    text-align: left;
+    padding-left: 10px;
+}
+
+th:first-child{
+    border-right: 1px solid black;
+}
+
+td {
+    /* white-space: nowrap; */
+    border: 1px solid rgb(163, 163, 163);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td:first-child{
+    border-right: 1px solid black;
+}
+
+@media screen and (max-width: 960px) {
+    #h4-response {
+        font-size: 14pt;
+    }
 }

@@ -14,28 +14,29 @@
     <div class="container">
         <div class="jumbotron text-center">
             <h1>Mission to Mars</h1>
+            <br />
             <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
         </div>
     </div>
 
     <div class="container">
-        <div class="col-12">
-            <h2 id="h2">Latest Mars News</h2>
-            <h4>{{ mars.news_title }}</h4>
-            <p>{{ mars.news_p }}</p>
+        <div class="row">
+            <div class="col-12">
+                <h2 id="h2">Latest Mars News</h2>
+                <h4>{{ mars.news_title }}</h4>
+                <p>{{ mars.news_p }}</p>
+            </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-8">
+            <div class="col-md-12 col-lg-8">
                 <h2 id="h2">Featured Image</h2>
-                <img src="{{ mars.featured_img }}" class="figure-img img-fluid" alt="Featured Image">
+                <img src="{{ mars.featured_img }}" class="figure-img img-fluid rounded" alt="Featured Image">
             </div>
-            <div class="col-sm-12 col-md-4">
-                <table class="table">
-                    <h3>Mars Facts</h3>
-                    {{ mars.mars_table|safe }}
-                </table>
+            <div class="col-md-12 col-lg-4">
+                <h3> Mars Facts</h3>
+                {{ mars.mars_table|safe }}
             </div>
         </div>
     </div>
@@ -46,19 +47,19 @@
         <div class="row">
             <figure class=" figure col-6">
                 <img src="{{ mars.hemisphere_urls.url[0] }}" class="figure-img img-fluid img-thumbnail" alt="">
-                <figcaption class="figure-caption"><h4>{{ mars.hemisphere_urls.title[0] }}</h4></figcaption>
+                <figcaption class="figure-caption"><h4 id="h4-response">{{ mars.hemisphere_urls.title[0] }}</h4></figcaption>
             </figure>
             <figure class=" figure col-6">
                 <img src="{{ mars.hemisphere_urls.url[1] }}" class="figure-img img-fluid img-thumbnail" alt="">
-                <figcaption class="figure-caption"><h4>{{ mars.hemisphere_urls.title[1] }}</h4></figcaption>
+                <figcaption class="figure-caption"><h4 id="h4-response">{{ mars.hemisphere_urls.title[1] }}</h4></figcaption>
             </figure>
             <figure class=" figure col-6">
                 <img src="{{ mars.hemisphere_urls.url[2] }}" class="figure-img img-fluid img-thumbnail" alt="">
-                <figcaption class="figure-caption"><h4>{{ mars.hemisphere_urls.title[2] }}</h4></figcaption>
+                <figcaption class="figure-caption"><h4 id="h4-response">{{ mars.hemisphere_urls.title[2] }}</h4></figcaption>
             </figure>
             <figure class=" figure col-6">
                 <img src="{{ mars.hemisphere_urls.url[3] }}" class="figure-img img-fluid img-thumbnail" alt="">
-                <figcaption class="figure-caption"><h4>{{ mars.hemisphere_urls.title[3] }}</h4></figcaption>
+                <figcaption class="figure-caption"><h4 id="h4-response">{{ mars.hemisphere_urls.title[3] }}</h4></figcaption>
             </figure>
             
         </div>

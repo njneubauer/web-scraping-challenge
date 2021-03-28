@@ -19,10 +19,8 @@ def index():
 def scrape():
     # call scrape function
     mars_data = scrape_mars.scrape()
-    
     # Update monogo DB collection
     mongo.db.collection.update({}, mars_data, upsert=True)
-    
     # Redirect back to index
     return redirect("/")
 
